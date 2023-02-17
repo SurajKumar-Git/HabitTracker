@@ -26,5 +26,16 @@ npm install
 npm start
 ```
 
+Verify the deployment by navigating to your server address in
+your preferred browser.
+
+```sh
+127.0.0.1:3000
+```
+
+## Hosted on server
+```sh
+http://3.93.9.204:3000/
+```
  
  
