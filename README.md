@@ -10,6 +10,7 @@ A web application to Track Daily habits.
   - HTML / CSS
   - Bootstrap
   - Javascript
+  - EJS Template Engine
   - Vue / Petite Vue
 
 
