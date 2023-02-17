@@ -1,0 +1,25 @@
+.habit-card > .card-body {
+  display: flex;
+}
+
+.track-habit {
+  align-self: center;
+}
+
+.track-habit:hover {
+  cursor: pointer;
+}
+
+.habit-details {
+  flex-grow: 2;
+}
+
+.habit-sub-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-habit-button > i {
+  font-size: x-large;
+}

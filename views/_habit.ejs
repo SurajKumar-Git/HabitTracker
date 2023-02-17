@@ -1,0 +1,38 @@
+<div class="container habit-card card">
+  <div class="card-body">
+    <div class="track-habit" data-id="<%= habit.id %>">
+      <!-- habit status -->
+      <% if(habit.todayStatus != null) { %>
+      <% if(habit.todayStatus) { %>
+      <i class="fa-solid fa-check green-color" data-status="marked-completed"></i>
+      <% } else { %>
+      <i class="fa-solid fa-xmark red-color" data-status="marked-notcompleted"></i>
+      <% } %>
+      <% } else { %>
+      <i class="fa-regular fa-square lightblue-color" data-status="unmarked"></i>
+      <% } %>
+    </div>
+    <div class="habit-details ms-4">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5 class="card-title">
+            <%= habit.name %>
+          </h5>
+          <p class="card-text">
+            <%= habit.description %>
+          </p>
+        </div>
+        <div class="habit-delete">
+          <a href="/habit/delete/<%= habit.id %>"><i class="fa-regular fa-trash-can red-color pointer"></i></a>
+        </div>
+      </div>
+      <% if(habit.category && habit.category.name != "_default") { %>
+      <div class="habit-sub-details mt-2">
+        <p>
+          <%= habit.category.name %>
+        </p>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</div>

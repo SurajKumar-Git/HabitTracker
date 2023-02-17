@@ -1,0 +1,31 @@
+<div class="modal fade" id="addHabitModal" tabindex="-1" aria-labelledby="addHabitModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addHabitModalLabel">Add Habit</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="/habit/add" id="add-habit-form">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="habit-name-input" name="name" placeholder="Enter Habit" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="habit-description-input" name="description" rows="4"></textarea>
+          </div>
+          <select name="category" id="habit-category" class="form-select">
+            <option selected disabled>Category</option>
+            <!-- Category options -->
+            <% for(let category of categories) { %>
+            <option value="<%= category.id %>"><%= category.name %></option>
+            <% } %>
+          </select>
+          <div class="modal-footer">
+            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

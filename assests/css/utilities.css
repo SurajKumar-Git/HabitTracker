@@ -1,0 +1,16 @@
+/* Utilities */
+.lightblue-color {
+  color: lightblue;
+}
+
+.red-color {
+  color: red;
+}
+
+.green-color {
+  color: green;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}

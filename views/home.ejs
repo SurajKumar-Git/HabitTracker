@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="css/home.css">
+
+
+<div id="main" class="container mt-3">
+  <div class="container habits-container">
+    <!-- Looping on habits array -->
+    <% for(let habit of habits) { %>
+    <!-- Habit Partials -->
+    <%- include('_habit', {habit}); %>
+    <% } %>
+  </div>
+</div>
+
+
+
+<script src="js/home.js" type="module"></script>

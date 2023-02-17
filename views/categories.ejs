@@ -1,0 +1,24 @@
+<div id="categories-container" class="container mt-5">
+  <form class="row row-cols-lg-auto g-3 align-items-center" method="post" action="/category/add">
+    <div class="col-12">
+      <div>
+        <input type="text" class="form-control" name="name" id="category-input" placeholder="Add New Category">
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+  </form>
+
+  <ul class="list-group list-group-flush mt-3">
+    <% for(let category of categories) { %>
+
+    <li class="list-group-item d-flex justify-content-between align-items-center w-25">
+      <%= category.name %>
+      <span class="category-delete">
+        <a href="/category/delete/<%= category.id %>"><i class="fa-regular fa-trash-can red-color pointer"></i></a>
+      </span>
+    </li>
+    <% } %>
+  </ul>
+</div>

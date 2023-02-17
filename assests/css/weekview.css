@@ -1,0 +1,25 @@
+#week-view-container {
+  width: 50%;
+}
+.weeks > div {
+  height: 30px;
+}
+
+.habit-name {
+  height: 30px;
+}
+
+.habit-name > span {
+  font-size: large;
+  font-weight: 600;
+}
+
+.habit-track-week-view > div {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+}
+
+.habit-track-week-view > div > i {
+  font-size: 50px;
+}

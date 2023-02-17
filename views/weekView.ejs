@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="css/weekview.css">
+
+<!-- Using Vue JS Library -->
+<div @vue:mounted="mounted()" id="week-view-container" class="container d-flex flex-column mt-5">
+  <div class="d-flex justify-content-between flex-nowra pointer">
+    <i class="fa-solid fa-chevron-left" @click="prevWeek"></i>
+    <span>
+      {{currentMonth}} {{currentYear}}
+    </span>
+    <i class="fa-solid fa-chevron-right pointer" @click="nextWeek"></i>
+  </div>
+  <div class="mt-3">
+    <div class="row weeks">
+      <div class="col">
+        <span>Sunday</span>
+      </div>
+      <div class="col">
+        <span>Monday</span>
+      </div>
+      <div class="col">
+        <span>Tuesday</span>
+      </div>
+      <div class="col">
+        <span>Wednesday</span>
+      </div>
+      <div class="col">
+        <span>Thursday</span>
+      </div>
+      <div class="col">
+        <span>Friday</span>
+      </div>
+      <div class="col">
+        <span>Saturday</span>
+      </div>
+    </div>
+    <template v-for="habit in habits">
+      <div class="habit-track-week-view-container mt-3">
+        <div class="habit-name">
+          <span>
+            {{ habit.name }}</span>
+        </div>
+        <div class="row habit-track-week-view">
+          <template v-for="day in week">
+            <div class="col pointer border border-primary" @click="changeHabitStatus(habit, day)">
+              <span>
+                {{ day.getDate() }}</span>
+              <i v-if="habitStatusForDate(habit,day) === true" class="fa-solid fa-check green-color"></i>
+              <i v-if="habitStatusForDate(habit,day) === false" class="fa-solid fa-xmark red-color"></i>
+            </div>
+          </template>
+        </div>
+      </div>
+    </template>
+  </div>
+</div>
+
+<script src="js/weekview.js" type="module"></script>
