@@ -1,7 +1,7 @@
 # HabitTracker
 A web application to Tracker Daily habits.
 
-### Tech Used
+## Built using (Tech): 
 - Backend
   - Node
   - Express
@@ -11,5 +11,19 @@ A web application to Tracker Daily habits.
   - Bootstrap
   - Javascript
   - Petite Vue
+
+
+## Installation
+Requires [Node.js](https://nodejs.org/) v18+ to run,
+[MongoDB](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/) as Database
+
+Install the dependencies and start the server.
+
+```sh
+cd HabitTracker
+npm install
+npm start
+```
+
  
  
