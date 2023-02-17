@@ -26,7 +26,7 @@ npm install
 npm start
 ```
 
-This should start the node server and Verify the it by navigating to your server address in
+This should start the node server and Verify it by navigating to your server address in
 your preferred browser.
 
 ```sh
