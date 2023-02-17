@@ -10,7 +10,7 @@ A web application to Tracker Daily habits.
   - HTML / CSS
   - Bootstrap
   - Javascript
-  - Petite Vue
+  - Vue / Petite Vue
 
 
 ## Installation
