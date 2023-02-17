@@ -1,5 +1,5 @@
 # HabitTracker
-A web application to Tracker Daily habits.
+A web application to Track Daily habits.
 
 ## Built using (Tech): 
 - Backend
