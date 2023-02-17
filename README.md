@@ -33,9 +33,5 @@ your preferred browser.
 127.0.0.1:3000
 ```
 
-## Hosted on server
-```sh
-http://3.93.9.204:3000/
-```
  
  
